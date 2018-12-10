@@ -3,21 +3,31 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Praetorian Solutions</title>
   <meta name="author" content="Praetorian Solutions" />
   <meta name="description" content="Praetorian Solutions website." />
-  <meta name="keywords"  content="parallax" />
   <meta name="Resource-type" content="Document" />
-  <link rel="stylesheet" href="main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/site.webmanifest">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/sticky.js"></script>
-  <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/brands.js" integrity="sha384-G/XjSSGjG98ANkPn82CYar6ZFqo7iCeZwVZIbNWhAmvCF2l+9b5S21K4udM7TGNu" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="header">
     <div class="header-left">
-      <a class="link">Contact Us</a>
+      <i class="fab fa-github-square"></i>
+      <i class="fab fa-linkedin"></i>
     </div>
     <div class="header-right">
       <div id="nav-icon">
@@ -27,11 +37,12 @@
       </div>
     </div>
   </div>
-  <div class="logo">Praetorian</div>
+  <div class="logo"></div>
+  <div class="title" id="title">PRAETORIAN</div>
   <div class="container">
-    <div class="slide-section section1 active" id="home">
+    <div class="slide-section section1" id="home">
     </div>
-    <div class="slide-section section2" id="portfolio">
+    <div class="slide-section section2" id="capabilities">
     </div>
     <div class="slide-section section3" id="news">
     </div>
@@ -40,18 +51,181 @@
     <div class="slide-section section5" id="about">
     </div>
     <div class="slide-section section6" id="contact">
+      <div class="footer">
+        <div class="footer-title">Contact Us</div>
+        <div class="footer-items">
+          <ul>
+            <li>
+              <p>Phone</p>
+              <p><a href="tel:202-609-7062">(202) 609-7062</a></p>
+            </li>
+            <li>
+              <p>Address</p>
+              <h4>2010 Corporate Ridge, Suite 700</h4>
+              <h4>McLean, VA 22102</h4>
+            </li>
+            <li>
+              <p>Email</p>
+              <p><a href="mailto:info@praetorian.solutions">info@praetorian.solutions</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="fixed-section fsection1">
-    <h2>Fixed section heading</h2>
-    <p>Information and picture...</p>
+  <div class="fixed-section fsection1" id="fsection1">
+    <h2>Capabilities</h2>
+    <div class="arrow aleft disabled" id="slide-left">
+      <a>
+        <span class="left"></span>
+      </a>
+    </div>
+    <div class="slider">
+      <label id="label1">
+        <input type="checkbox"  />
+        <div class="card">
+            <div class="front">
+              <img src="./img/aws-solutions-architect.png" alt="AWS Solutions Architect Badge"/>
+            </div>
+            <div class="back">
+              <h2>AWS Solutions Architect</h2>
+              <p>
+                Praetorian Solutions employs an <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-08-18&ci=AWS00312032" target="_blank">AWS Solutions Architect</a> who can guide you to make the smart decisions when moving your company to the cloud. We've developed serverless solutions that reduce cost and increase efficiency.
+              </p>
+            </div>
+        </div>
+      </label>
+      <label id="label2">
+        <input type="checkbox"  />
+        <div class="card">
+            <div class="front">
+              <img src="./img/gcp.png" alt="Google Cloud Platform"/>
+            </div>
+            <div class="back">
+              <h2>Google Cloud</h2>
+              <p>
+                Praetorian Solutions is capable of providing expertise in data engineering and cloud architecture for the Google Cloud Platform. We've developed applications that use machine learning to analyze and present customer data.
+              </p>
+            </div>
+        </div>
+      </label>
+      <label id="label3">
+        <input type="checkbox"  />
+        <div class="card">
+            <div class="front">
+              <img src="./img/angular.png" alt="AWS Solutions Architect Badge"/>
+            </div>
+            <div class="back">
+              <h2>Angular</h2>
+              <p>
+                Praetorian Solutions develops single page applications using the latest version of Angular to create lightning fast user experiences with modular components.
+              </p>
+            </div>
+        </div>
+      </label>
+      <label id="label4">
+        <input type="checkbox"  />
+        <div class="card">
+            <div class="front">
+              <img src="./img/html5.png" alt="AWS Solutions Architect Badge"/>
+            </div>
+            <div class="back">
+              <h2>HTML5</h2>
+              <p>
+                Praetorian Solutions is experienced building cutting edge websites using the latest web standards so that it just works no matter what.
+              </p>
+            </div>
+        </div>
+      </label>
+      <label id="label5">
+        <input type="checkbox"  />
+        <div class="card">
+            <div class="front">
+              <img src="./img/css3.png" alt="AWS Solutions Architect Badge"/>
+            </div>
+            <div class="back">
+              <h2>CSS3</h2>
+              <p>
+                Praetorian Solutions uses the latest design practices so that your user experience exceeds the expectations of your users. We use Sass and LESS for CSS preprocessing to create themable CSS that increases efficiency and decreases development time. We have experience using popular frameworks such as Bootstrap and Material Design.
+              </p>
+            </div>
+        </div>
+      </label>
+      <label id="label6">
+        <input type="checkbox"  />
+        <div class="card">
+            <div class="front">
+              <img src="./img/d3.png" alt="AWS Solutions Architect Badge"/>
+            </div>
+            <div class="back">
+              <h2>Data Driven Documents</h2>
+              <p>
+                Praetorian Solutions creates beautiful, engaging, and meaningful data visualizations using the D3 JavaScript charting library. Combined with our data analytics expertise, we'll transform your data into answers.
+              </p>
+            </div>
+        </div>
+      </label>
+    </div>
+    <div class="arrow aright" id="slide-right">
+      <a>
+        <span class="right"></span>
+      </a>
+    </div>
+  </div>
+  <div class="fixed-section fsection2" id="fsection2">
+    <h2>News</h2>
+    <div class="arrow aup disabled" id="slide-up">
+      <a>
+        <span class="up"></span>
+      </a>
+    </div>
+    <div class="news-slide">
+      <ul class="news">
+        <li>
+          <div>
+            <h1>New Site Launched</h1>
+            <h2>Aug 1, 2018</h2>
+          </div>
+          <p>The new Praetorian Solutions website has been launched. Have a look around, we hope you enjoy the new look.</p>
+        </li>
+        <li>
+          <div>
+            <h1>Octo Contracts Executed</h1>
+            <h2>Jul 2, 2018</h2>
+          </div>
+          <p>Praetorian Solutions started working their contracts with Octo Consulting Group today.</p>
+        </li>
+        <li>
+          <div>
+            <h1>Contract Awarded</h1>
+            <h2>Jun 29, 2018</h2>
+          </div>
+          <p>Praetorian Solutions was awarded a contract to work with Octo Consulting Group.</p>
+        </li>
+        <li>
+          <div>
+            <h1>Company Founded</h1>
+            <h2>May 23, 2018</h2>
+          </div>
+          <p>Praetorian Solutions was founded today.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="arrow adown" id="slide-down">
+      <a>
+        <span class="down"></span>
+      </a>
+    </div>
+  </div>
+  <div class="fixed-section fsection3" id="fsection3">
+    <h2>Why Praetorian</h2>
+    <p>Praetorian Solutions is a results based organization that produces cutting edge technology solutions to meet the business challenges of our customers. Founded in 2018, we provide our customers with a consulting group that goes beyond expectations to deliver results that endure. We address what our customers want today and provide them with the tools they need to succeed in the future.</p>
   </div>
   <ul class="menu">
     <li id="m-s1" class="active"><a class="link" href="#home">Home</a>
-    <li id="m-s2"><a class="link" href="#portfolio">Portfolio</a>
+    <li id="m-s2"><a class="link" href="#capabilities">Capabilities</a>
     <li id="m-s3"><a class="link" href="#news">News</a>
     <li id="m-s4"><a class="link" href="#why">Why Praetorian</a>
-    <li id="m-s5"><a class="link" href="#about">About Us</a>
     <li id="m-s6"><a class="link" href="#contact">Contact Us</a>
   </ul>
 </body>
